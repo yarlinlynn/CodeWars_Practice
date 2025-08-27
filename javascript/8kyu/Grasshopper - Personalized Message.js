@@ -1,0 +1,34 @@
+/*
+Instructions:
+Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+Use conditionals to return the proper message:
+case	return
+name equals owner	'Hello boss'
+otherwise	'Hello guest'
+*/
+
+// Solution:
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest'
+}
+
+/*
+Best rated solutions:
+
+function greet (name, owner) {
+  return `Hello ${name==owner?'boss':'guest'}`
+}
+
+const greet = (name, owner) => name == owner? 'Hello boss': 'Hello guest';
+
+const greet = (name, owner) => `Hello ${name === owner ? 'boss' : 'guest'}`;
+
+function greet (name, owner) {
+  if (name === owner) {
+    return 'Hello boss';
+  }
+  return 'Hello guest';
+}
+
+*/

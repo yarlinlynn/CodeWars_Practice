@@ -5,5 +5,14 @@ Write function parseF which takes an input and returns a number or null if conve
 
 // Solution:
 
-const parseF = (s) => isNaN(s) ? null : parseFloat(s)
+const parseF = s => Number.isNaN(parseFloat(s)) ? null : parseFloat(s)
+
+/*
+Best rated solutions:
+
+const parseF = s => {
+  let num = parseFloat(s);
+  return Number.isNaN(num) ? null : num
+}
+*/
 

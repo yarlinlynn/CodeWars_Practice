@@ -1,0 +1,18 @@
+/*
+Instructions:
+This method, which is supposed to return the result of dividing its first argument by its second, isn't always returning correct values. Fix it.
+
+const solve = (x, y) => x // y
+*/
+
+// Solution:
+const solve = (x, y) => x / y;
+
+/*
+Best rated solutions:
+
+function solve(x, y) {
+  return (y == 0) ? Infinity : (x / y);
+}
+
+*/
